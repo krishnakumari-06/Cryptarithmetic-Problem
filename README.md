@@ -75,10 +75,12 @@ End<br>
 
 
 # program
-from itertools import permutations
 
+
+from itertools import permutations
+from itertools import permutations
 def is_valid(mapping, word1, word2, word3):
-    # Convert a word into a number based on the mapping of letters to digits
+    
     def word_to_num(word):
         num = 0
         for ch in word:
@@ -92,7 +94,7 @@ def is_valid(mapping, word1, word2, word3):
     return val1 + val2 == val3
 
 def solve_cryptarithmetic(word1, word2, word3):
-    # Extract unique letters
+    
     unique_letters = set(word1 + word2 + word3)
     
     if len(unique_letters) > 10:
@@ -129,11 +131,13 @@ def solve_cryptarithmetic(word1, word2, word3):
             return mapping
     
     print("No solution found.")
-
-# output
-<img width="353" height="378" alt="image" src="https://github.com/user-attachments/assets/aefbc8a5-f0e3-461a-9b28-c2916b465ba7" />
+ # output
+ 
+<img width="353" height="378" alt="image" src="https://github.com/user-attachments/assets/443880bc-a424-4954-be34-f4b3973a4ce6" />
 
 # Given problem: BASE + BALL = GAMES
+solve_cryptarithmetic("BASE", "BALL", "GAMES")
+
 solve_cryptarithmetic("BASE", "BALL", "GAMES")
 
 <h2>Sample Input and Output:</h2>
