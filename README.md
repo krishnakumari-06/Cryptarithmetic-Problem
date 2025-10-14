@@ -72,6 +72,8 @@ Begin<br>
    return false<br>
 End<br>
 <hr>
+
+
 # program
 from itertools import permutations
 
