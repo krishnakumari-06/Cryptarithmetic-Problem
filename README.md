@@ -13,7 +13,6 @@ This algorithm will take three words.
     B A L L<br>
            ----------<br>
            G A M E S<br>
-
 Output:
 It will show which letter holds which number from 0 – 9.
 For this case it is like this.
@@ -62,21 +61,15 @@ Begin<br>
          if nodeList[j].letter = ch, then<br>
             break<br>
       done<br>
-
       val3 := val3 + (m * nodeList[j].value)
       m := m * 10
    done<br>
-
    if val3 = (val1 + val2), then<br>
       return true<br>
    return false<br>
 End<br>
 <hr>
-
-
 # program
-
-
 from itertools import permutations
 from itertools import permutations
 def is_valid(mapping, word1, word2, word3):
@@ -92,7 +85,6 @@ def is_valid(mapping, word1, word2, word3):
     val3 = word_to_num(word3)
     
     return val1 + val2 == val3
-
 def solve_cryptarithmetic(word1, word2, word3):
     
     unique_letters = set(word1 + word2 + word3)
@@ -132,12 +124,10 @@ def solve_cryptarithmetic(word1, word2, word3):
     
     print("No solution found.")
  # output
- 
 <img width="353" height="378" alt="image" src="https://github.com/user-attachments/assets/443880bc-a424-4954-be34-f4b3973a4ce6" />
 
 # Given problem: BASE + BALL = GAMES
 solve_cryptarithmetic("BASE", "BALL", "GAMES")
-
 solve_cryptarithmetic("BASE", "BALL", "GAMES")
 
 <h2>Sample Input and Output:</h2>
